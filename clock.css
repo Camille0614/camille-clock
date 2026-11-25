@@ -1,0 +1,41 @@
+
+body {
+    background-color: #e6dce9;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+#clock {
+    background-color: #302b35;
+    color: #e8c9ed;
+    width: 65%;
+    font-size: 8vw;
+    text-align: center;
+    padding: 70px 20px 40px;
+    border: 2px solid black;
+    box-shadow: 12px 12px #b99ac8;
+    position: relative;
+}
+
+#clock::before {
+    content: "my clock";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c8afd6;
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#clock:hover {
+    background-color: #e8c9ed;
+    color: #302b35;
+}
